@@ -24,12 +24,13 @@ project_name
 3. In spider_name.py add breakpoints where needed.
 4. Run shell_debug.py in debug mode.
 
-## Advantages over standard scrapy shell
+## Pros and Cons
+### Advantages over standard scrapy shell
 - For more advanced IDEs will utilise code completion, etc from a native python console.
 - It will have imported any relevant functions at the time the console opens.
 - Any initial set ups like location setting, login, etc could be completed by the spider prior to hitting the breakpoint.
 
-## Disadvantages over standard scrapy shell
+### Disadvantages over standard scrapy shell
 - Requires adding additional code to the spider if specific urls should be obtained. 
 - Doesn't easily allow fetching a new url in the same session - have to exit, update relevant code to visit a new url and then restart.
 
